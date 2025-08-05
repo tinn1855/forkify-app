@@ -1,0 +1,23 @@
+{
+  "name": "forkify",
+  "version": "1.0.0",
+  "description": "recipe application",
+  "homepage": "https://github.com/tinn1855/forkify-app#readme",
+  "bugs": {
+    "url": "https://github.com/tinn1855/forkify-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tinn1855/forkify-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "parcel": "^2.15.4"
+  }
+}
