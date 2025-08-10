@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+}
+
+#app {
+  height: 100vh;
+  display: flex;
+}
+
+.main-content {
+  width: 75%;
+  padding: 20px;
+}
+
+.sidebar {
+  background-color: #f0f8ff;
+  width: 25%;
+  padding: 20px;
+}
+
+.toolbar {
+  background-color: #f5f5f5;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+  padding: 10px;
+  display: flex;
+}
+
+.overlay {
+  background-color: #00000080;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+
+.overlay.active {
+  display: flex;
+}
+
+#list-recipes {
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+
+#search-recipes {
+  margin-bottom: 10px;
+}
+
+#search-recipes input {
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  padding: 10px;
+}
+
+#create-recipe-form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+}
+/*# sourceMappingURL=forkify-app.9b976711.css.map */
