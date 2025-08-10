@@ -11,7 +11,6 @@ class ResultsView extends View {
     return this._data.map(this._generateMarkupPreview).join('');
   }
   _generateMarkup() {
-    console.log(this._data);
     return this._data
       .map(results => previewView.render(results, false))
       .join('');
