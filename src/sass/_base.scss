@@ -12,9 +12,9 @@ $color-grey-dark-2: #918581; // Lighter text
 $gradient: linear-gradient(to right bottom, $color-grad-1, $color-grad-2);
 
 $bp-large: 78.15em; // 1250px
-$bp-medium: 61.25em; // 980px
-$bp-small: 37.5em; // 600px
-$bp-smallest: 31.25em; // 500px
+$bp-medium: 64em; // 1024px
+$bp-small: 48em; // 768px
+$bp-smallest: 40em; // 640px
 
 * {
   margin: 0;
@@ -33,6 +33,13 @@ html {
 
   @media only screen and (max-width: $bp-medium) {
     font-size: 50%;
+  }
+
+  @media screen and (max-width: $bp-small) {
+    font-size: 37.5%;
+  }
+  @media screen and (max-width: $bp-smallest) {
+    font-size: 25%;
   }
 }
 
@@ -67,5 +74,11 @@ body {
     max-width: 100%;
     margin: 0;
     border-radius: 0;
+  }
+
+  @media screen and (max-width: $bp-medium) {
+    grid-template-rows: 10rem auto;
+    grid-template-columns: 1fr;
+    grid-template-areas: 'head' 'list' 'recipe';
   }
 }
