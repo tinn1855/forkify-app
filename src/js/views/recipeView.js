@@ -28,6 +28,7 @@ class RecipeView extends View {
       handler();
     });
   }
+
   _generateMarkup() {
     return `
         <figure class="recipe__fig">
@@ -117,6 +118,7 @@ class RecipeView extends View {
             </svg>
           </a>
         </div>
+        
       `;
   }
   _generateMarkupIngredients(ing) {
